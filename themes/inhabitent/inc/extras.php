@@ -20,3 +20,15 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+function my_login_logo_one() { 
+	?> 
+	<style type="text/css"> 
+	body.login div#login h1 a {
+	background-image: url(http://localhost/Applications/MAMP/htdocs/wptest/wp-content/themes/inhabitent/project-04/images/logos/inhabitent-logo-text-dark.svg);
+	padding-bottom: 30px; 
+	} 
+	</style>
+	 <?php 
+	} add_action( 'login_enqueue_scripts', 'my_login_logo_one' );
+

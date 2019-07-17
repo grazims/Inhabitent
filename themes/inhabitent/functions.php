@@ -94,6 +94,22 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
+
+// add font awesome
+
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+function enqueue_load_fa() {
+wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+}
+
+
+// Remove "Editor" links from sub-menus
+function inhabitent_remove_submenus() {
+    remove_submenu_page( 'themes.php', 'theme-editor.php' );
+    remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
+}
+add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
 /**
  * Custom template tags for this theme.
  */

@@ -1,5 +1,69 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.site {
+  .site-content {
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    max-width: 1120px;
+    margin: 0 auto;
 
-/* Front page */
+    .content-area {
+      flex: 2;
+    }
+    .widget-area {
+      flex: 1;
+      padding: 20px;
+    }
+  }
+  //-------------------------------//
+  /* Front page */
+
+  .home {
+    .site {
+      max-width: 90%;
+    }
+    .site-header {
+      background-color: seagreen;
+      padding: 1rem;
+    }
+  }
+}
+
+//----------------------------------//
+// FOOTER
+//----------------------------------//
+
+.site-footer {
+  background-image: url(http://localhost:3000/wptest/wp-content/themes/inhabitent/project-04/images/dark-wood@2x.png);
+  color: #ffffff;
+  padding: 1rem;
+
+  .colum {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5rem;
+
+    .contato,
+    .business {
+      display: flex;
+      margin: 0 2rem;
+      flex-direction: column;
+
+      .laranja {
+        color: #d99054;
+        font-weight: bold;
+      }
+
+      p {
+        line-height: 1.7;
+        margin: 0;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+  }
+}
