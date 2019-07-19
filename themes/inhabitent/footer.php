@@ -25,6 +25,8 @@
 							<p>Saturday: 10am to 2pm</p>
 							<p>Sunday: Closed</p>
 						</div>
+						<div class="logo">
+						<img src="url(http://localhost:3000/wptest/wp-content/themes/inhabitent/project-04/images/logos/inhabitent-logo-text-dark.svg)">
 					</div>
 						<div class="copyright">
 							<p>COPYRIGHT © 2019 INHABITENT</p>

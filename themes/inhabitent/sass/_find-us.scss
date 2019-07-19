@@ -1,23 +1,53 @@
 .site-content {
   background-color: #ffffff;
 
+  .p {
+    font-family: 'Merriweather Web';
+    font-size: 16px;
+  }
+  .form {
+    color: #2f1339;
+    font-family: 'Novecento Sans Web';
+  }
+
   .content-area {
     background-color: #ffffff;
-    // border-right: 1px solid #e1e1e1;
+    font-family: 'Novecento Sans Web';
+    font-size: 19px;
+    line-height: 1.75;
+  }
+
+  .required {
+    color: #d99054;
   }
 }
-.site-main {
-}
 
-//side bar
+// .site-main {
+// }
+
+//----------SIDE BAR------------//
+
 .site-content {
   .widget-area {
     background-color: #ffffff;
+    border-left: 1px solid #e1e1e1;
+    font-family: 'Merriweather Web';
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .fas {
+    font-size: 14px;
+    padding: 5px;
   }
 }
 .caixaalta {
   font-weight: bold;
   color: #2f1339;
+  font-family: 'Novecento Sans Web';
+  font-size: 19px;
+  letter-spacing: 2px;
+  //FALTA ESPAÇAMENTO NA FONTE//
 }
 .heavy {
   font-weight: bold;

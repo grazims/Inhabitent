@@ -22,14 +22,30 @@ h4,
 h5,
 h6 {
   clear: both;
+  text-transform: uppercase;
+  line-height: 1.75;
+}
+
+h2 {
+  font-family: 'Novecento Sans Web';
+  color: #2f1339;
 }
 
 /* Copy */
 
-p {
-  margin-bottom: $base__space-unit;
+.label {
+  font-family: 'Novecento Sans Web';
+  font-size: 16px;
+  line-height: 1.75;
+  color: #2f1339;
 }
 
+p {
+  margin-bottom: $base__space-unit;
+  font-family: 'Merriweather Web';
+  font-size: 16px;
+  line-height: 1.75;
+}
 dfn,
 cite,
 em,

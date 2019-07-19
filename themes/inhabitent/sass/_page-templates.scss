@@ -36,7 +36,7 @@
 //----------------------------------//
 
 .site-footer {
-  background-image: url(http://localhost:3000/wptest/wp-content/themes/inhabitent/project-04/images/dark-wood@2x.png);
+  background-image: url(http://localhost:3000/wptest/wp-content/themes/inhabitent/project-04/images/dark-wood.png);
   color: #ffffff;
   padding: 1rem;
 
@@ -55,6 +55,12 @@
       .laranja {
         color: #d99054;
         font-weight: bold;
+        font-family: 'Novecento Sans Web';
+        font-size: 16px;
+        line-height: 1.75;
+      }
+      .logo {
+        height: 300px;
       }
 
       p {
@@ -65,5 +71,10 @@
   }
   .copyright {
     text-align: center;
+    p {
+      font-family: 'Novecento Sans Web';
+      font-size: 16px;
+      line-height: 1.75;
+    }
   }
 }

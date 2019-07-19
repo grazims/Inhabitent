@@ -223,8 +223,57 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
-# Embedded Fonts
+# Embedded ../../Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../fonts/merriweather-light-webfont.eot");
+  src: url("../../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../fonts/merriweather-light-webfont.woff") format("woff"), url("../../fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../fonts/merriweather-lightitalic-webfont.eot");
+  src: url("../../fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../../fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../fonts/merriweather-bold-webfont.eot");
+  src: url("../../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bold-webfont.woff") format("woff"), url("../../fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../fonts/merriweather-bolditalic-webfont.eot");
+  src: url("../../fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../../fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+/**
+ * Sample @font-face rules for Novocento
+ * 
+ * Usage:
+ * Copy these rules into the appropriate Sass partial and update the file paths as needed
+ *
+*/
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -246,11 +295,26 @@ h3,
 h4,
 h5,
 h6 {
-  clear: both; }
+  clear: both;
+  text-transform: uppercase;
+  line-height: 1.75; }
+
+h2 {
+  font-family: 'Novecento Sans Web';
+  color: #2f1339; }
 
 /* Copy */
+.label {
+  font-family: 'Novecento Sans Web';
+  font-size: 16px;
+  line-height: 1.75;
+  color: #2f1339; }
+
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-family: 'Merriweather Web';
+  font-size: 16px;
+  line-height: 1.75; }
 
 dfn,
 cite,
@@ -366,67 +430,97 @@ table {
 --------------------------------------------------------------*/
 /* Buttons */
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  border: none;
+  background: #248a83;
+  color: #fff;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
-
-/* Fields */
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  textarea:focus {
-    color: #111; }
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-  padding: 3px; }
-
-textarea {
-  padding-left: 3px;
-  width: 100%; }
+  padding: 0.6rem 1rem 0.4rem;
+  font-family: 'Novecento Sans Web';
+  /* Fields */ }
+  button input[type='text'],
+  button input[type='email'],
+  button input[type='url'],
+  button input[type='password'],
+  button input[type='search'],
+  button textarea,
+  input[type='button'] input[type='text'],
+  input[type='button'] input[type='email'],
+  input[type='button'] input[type='url'],
+  input[type='button'] input[type='password'],
+  input[type='button'] input[type='search'],
+  input[type='button'] textarea,
+  input[type='reset'] input[type='text'],
+  input[type='reset'] input[type='email'],
+  input[type='reset'] input[type='url'],
+  input[type='reset'] input[type='password'],
+  input[type='reset'] input[type='search'],
+  input[type='reset'] textarea,
+  input[type='submit'] input[type='text'],
+  input[type='submit'] input[type='email'],
+  input[type='submit'] input[type='url'],
+  input[type='submit'] input[type='password'],
+  input[type='submit'] input[type='search'],
+  input[type='submit'] textarea {
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 3px; }
+    button input[type='text']:focus,
+    button input[type='email']:focus,
+    button input[type='url']:focus,
+    button input[type='password']:focus,
+    button input[type='search']:focus,
+    button textarea:focus,
+    input[type='button'] input[type='text']:focus,
+    input[type='button'] input[type='email']:focus,
+    input[type='button'] input[type='url']:focus,
+    input[type='button'] input[type='password']:focus,
+    input[type='button'] input[type='search']:focus,
+    input[type='button'] textarea:focus,
+    input[type='reset'] input[type='text']:focus,
+    input[type='reset'] input[type='email']:focus,
+    input[type='reset'] input[type='url']:focus,
+    input[type='reset'] input[type='password']:focus,
+    input[type='reset'] input[type='search']:focus,
+    input[type='reset'] textarea:focus,
+    input[type='submit'] input[type='text']:focus,
+    input[type='submit'] input[type='email']:focus,
+    input[type='submit'] input[type='url']:focus,
+    input[type='submit'] input[type='password']:focus,
+    input[type='submit'] input[type='search']:focus,
+    input[type='submit'] textarea:focus {
+      color: #111; }
+  button input[type='text'],
+  button input[type='email'],
+  button input[type='url'],
+  button input[type='password'],
+  button input[type='search'],
+  input[type='button'] input[type='text'],
+  input[type='button'] input[type='email'],
+  input[type='button'] input[type='url'],
+  input[type='button'] input[type='password'],
+  input[type='button'] input[type='search'],
+  input[type='reset'] input[type='text'],
+  input[type='reset'] input[type='email'],
+  input[type='reset'] input[type='url'],
+  input[type='reset'] input[type='password'],
+  input[type='reset'] input[type='search'],
+  input[type='submit'] input[type='text'],
+  input[type='submit'] input[type='email'],
+  input[type='submit'] input[type='url'],
+  input[type='submit'] input[type='password'],
+  input[type='submit'] input[type='search'] {
+    padding: 3px; }
+  button textarea,
+  input[type='button'] textarea,
+  input[type='reset'] textarea,
+  input[type='submit'] textarea {
+    padding-left: 3px;
+    width: 100%; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -706,7 +800,7 @@ object {
     padding: 1rem; }
 
 .site-footer {
-  background-image: url(http://localhost:3000/wptest/wp-content/themes/inhabitent/project-04/images/dark-wood@2x.png);
+  background-image: url(http://localhost:3000/wptest/wp-content/themes/inhabitent/project-04/images/dark-wood.png);
   color: #ffffff;
   padding: 1rem; }
   .site-footer .colum {
@@ -733,13 +827,23 @@ object {
       .site-footer .colum .contato .laranja,
       .site-footer .colum .business .laranja {
         color: #d99054;
-        font-weight: bold; }
+        font-weight: bold;
+        font-family: 'Novecento Sans Web';
+        font-size: 16px;
+        line-height: 1.75; }
+      .site-footer .colum .contato .logo,
+      .site-footer .colum .business .logo {
+        height: 300px; }
       .site-footer .colum .contato p,
       .site-footer .colum .business p {
         line-height: 1.7;
         margin: 0; }
   .site-footer .copyright {
     text-align: center; }
+    .site-footer .copyright p {
+      font-family: 'Novecento Sans Web';
+      font-size: 16px;
+      line-height: 1.75; }
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.5);
@@ -774,15 +878,37 @@ object {
 
 .site-content {
   background-color: #ffffff; }
+  .site-content .p {
+    font-family: 'Merriweather Web';
+    font-size: 16px; }
+  .site-content .form {
+    color: #2f1339;
+    font-family: 'Novecento Sans Web'; }
   .site-content .content-area {
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    font-family: 'Novecento Sans Web';
+    font-size: 19px;
+    line-height: 1.75; }
+  .site-content .required {
+    color: #d99054; }
 
 .site-content .widget-area {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  border-left: 1px solid #e1e1e1;
+  font-family: 'Merriweather Web';
+  font-size: 16px;
+  line-height: 1.75; }
+
+.site-content .fas {
+  font-size: 14px;
+  padding: 5px; }
 
 .caixaalta {
   font-weight: bold;
-  color: #2f1339; }
+  color: #2f1339;
+  font-family: 'Novecento Sans Web';
+  font-size: 19px;
+  letter-spacing: 2px; }
 
 .heavy {
   font-weight: bold; }
