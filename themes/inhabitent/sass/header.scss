@@ -1,25 +1,39 @@
 .site-header {
   background-color: hsla(0, 0%, 100%, 0.5);
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 40px;
   left: 0;
   right: 0;
-  padding: 2rem 0;
+  z-index: 999;
+  padding: 0.5rem 0;
   width: 100%;
   border-bottom: 1px solid #e1e1e1;
   color: #248a83;
+  display: flex;
+  padding-right: 100px;
+
+  font-family: 'Novecento Sans Web';
+  font-size: 1rem;
+  line-height: 1.75;
+  text-transform: lowercase;
 }
 
 .main-navigation {
   display: flex;
   justify-content: flex-end;
   width: 85%;
+  align-items: center;
 }
 .menu-item {
   margin-left: 10px;
 }
 
-// .h1 {
-//   .entry-title {
-//     text-transform: lowercase;
-//   }
+.logo {
+  width: 50px;
+  justify-content: flex-start;
+  margin-left: 200px;
+}
+
+.fas {
+  margin-left: 25px;
+}

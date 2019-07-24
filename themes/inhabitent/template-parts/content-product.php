@@ -10,10 +10,15 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
 
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		
+		<div class="product-thumb" style="background-image: url(<?php the_post_thumbnail_url( 'large' ); ?> 
+);">
+
+		</div>
+		<?php endif; ?>
+		
+		<?php the_title( sprintf( '<p class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
@@ -23,6 +28,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_excerpt(); ?>
+		
+		<?php echo CFS()->get( 'price' ); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

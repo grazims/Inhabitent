@@ -27,15 +27,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	<span>1490 W Broadway <br>
 		Vancouver, BC V6H 1H5</span>
 
-
-	<p class="caixaalta">BUSINESS HOURS</p>
-
-	<p> <span class="heavy">Monday-Friday:</span> 9am to 5pm</p>
-
-	<p> <span class="heavy">Saturday:</span> 10am to 2pm</p>
-
-	<p> <span class="heavy">Sunday:</span> Closed</p>
-
 <?php dynamic_sidebar( 'sidebar-1' ); ?>
 	
 </div><!-- #secondary -->

@@ -303,6 +303,12 @@ h2 {
   font-family: 'Novecento Sans Web';
   color: #2f1339; }
 
+h3 {
+  color: #d99054;
+  font-weight: bold;
+  font-family: 'Novecento Sans Web';
+  font-size: 16px; }
+
 /* Copy */
 .label {
   font-family: 'Novecento Sans Web';
@@ -657,7 +663,7 @@ a {
 --------------------------------------------------------------*/
 .clearfix {
   clear: both;
-  content: "";
+  content: '';
   display: table; }
 
 /*--------------------------------------------------------------
@@ -777,13 +783,15 @@ object {
 .site {
   /* Front page */ }
   .site .site-content {
-    padding: 1rem;
-    margin: 1rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-width: 1120px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 100px; }
+    .site .site-content .entry-header {
+      padding-top: 2rem;
+      padding-right: 2rem; }
     .site .site-content .content-area {
       -webkit-box-flex: 2;
           -ms-flex: 2;
@@ -799,63 +807,25 @@ object {
     background-color: seagreen;
     padding: 1rem; }
 
-.site-footer {
-  background-image: url(http://localhost:3000/wptest/wp-content/themes/inhabitent/project-04/images/dark-wood.png);
-  color: #ffffff;
-  padding: 1rem; }
-  .site-footer .colum {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 5rem; }
-    .site-footer .colum .contato,
-    .site-footer .colum .business {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin: 0 2rem;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .site-footer .colum .contato .laranja,
-      .site-footer .colum .business .laranja {
-        color: #d99054;
-        font-weight: bold;
-        font-family: 'Novecento Sans Web';
-        font-size: 16px;
-        line-height: 1.75; }
-      .site-footer .colum .contato .logo,
-      .site-footer .colum .business .logo {
-        height: 300px; }
-      .site-footer .colum .contato p,
-      .site-footer .colum .business p {
-        line-height: 1.7;
-        margin: 0; }
-  .site-footer .copyright {
-    text-align: center; }
-    .site-footer .copyright p {
-      font-family: 'Novecento Sans Web';
-      font-size: 16px;
-      line-height: 1.75; }
-
 .site-header {
   background-color: rgba(255, 255, 255, 0.5);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 40px;
   left: 0;
   right: 0;
-  padding: 2rem 0;
+  z-index: 999;
+  padding: 0.5rem 0;
   width: 100%;
   border-bottom: 1px solid #e1e1e1;
-  color: #248a83; }
+  color: #248a83;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 100px;
+  font-family: 'Novecento Sans Web';
+  font-size: 1rem;
+  line-height: 1.75;
+  text-transform: lowercase; }
 
 .main-navigation {
   display: -webkit-box;
@@ -864,10 +834,23 @@ object {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 85%; }
+  width: 85%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .menu-item {
   margin-left: 10px; }
+
+.logo {
+  width: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 200px; }
+
+.fas {
+  margin-left: 25px; }
 
 .hero-image-header {
   height: 100vh;
@@ -912,3 +895,87 @@ object {
 
 .heavy {
   font-weight: bold; }
+
+.site-maine {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  padding-top: 100px; }
+
+.page-header {
+  color: #404040;
+  border-bottom: 1px dashed #c8c8c8;
+  text-align: center; }
+  .page-header .subtitle {
+    font-family: 'Novecento Sans Web';
+    font-size: 1rem;
+    line-height: 1.75;
+    font-size: 18px;
+    text-decoration: none; }
+  .page-header .title {
+    margin: 0 auto;
+    display: table; }
+  .page-header .list-dot {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 400px;
+    margin: auto; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding-top: 3rem; }
+  .grid-container .product-thumb {
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+.site-footer {
+  background-image: url(http://localhost:3000/wptest/wp-content/themes/inhabitent/project-04/images/dark-wood.png);
+  color: #ffffff;
+  padding: 1rem;
+  height: 400px; }
+  .site-footer .colum {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 5rem; }
+  .site-footer .block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px;
+    margin: 0 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .site-footer .logof {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .site-footer .footer-info {
+    color: #ffffff;
+    text-decoration: none; }
+  .site-footer p {
+    line-height: 1.7;
+    margin: 0; }
+  .site-footer .medias {
+    margin-left: 40px;
+    margin-top: 10px; }
+
+.copyright p {
+  font-family: 'Novecento Sans Web';
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: center;
+  margin-top: 50px; }
