@@ -9,21 +9,21 @@
 
 			</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
+			<footer style="background: url(<?= get_stylesheet_directory_uri() . '/images/dark-wood.png'; ?>)" id="colophon" class="site-footer" role="contentinfo">
 				<!-- <div class="site-info">
 					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
 				</div>.site-info  -->
-					<div class="colum">
+					<div class="footer-container">
 						<div class="block">
 							<h3> CONTACT INFO</h3>
 							<p>
-							<i class="fas fa-envelope"></i>
-							<a href="mailto: info@inhabitent.com"><i class="email"></i>
+							<i class="fa fa-envelope"></i>
+							<a href="mailto: info@inhabitent.com" class="email">
 							<span class="footer-info">info@inhabitent.com</span></a>
 							</p>
 							<p>
-							<i class="fas fa-phone-alt"></i>	
-							<a href="tel: 7784567891"><i class="phone"></i>
+							<i class="fa fa-phone-alt"></i>	
+							<a href="tel: 7784567891" class="phone">
 							<span class="footer-info">778-456-7891</span></a> 
 							</p>
 
@@ -36,15 +36,15 @@
 						</div>
 						<div class="block">
 							<h3>BUSINESS HOURS</h3>
-							<p>Monday-Friday: 9am to 5pm</p>
-							<p>Saturday: 10am to 2pm</p>
-							<p>Sunday: Closed</p>
+							<p><span class="span">Monday-Friday:</span> 9am to 5pm</p>
+							<p><span class="span">Saturday:</span> 10am to 2pm</p>
+							<p><span class="span">Sunday:</span> Closed</p>
 						</div>
 
-
-
-						<img class="" src="<?php echo get_template_directory_uri() . '/project-04/images/logos/inhabitent-logo-text.svg' ?> " alt="ji"/>
-            </div>
+						<div class="block3">
+						<a href="#" rel="home" class="logofooter"><img class="logofooter" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-text.svg' ?> " alt="logo-footer"/></a>
+						</div>	
+					</div>
 
 
 			<div class="copyright">

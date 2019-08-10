@@ -1,50 +1,86 @@
-.site-content {
-  background-color: #ffffff;
-
-  .p {
-    font-family: 'Merriweather Web';
-    font-size: 16px;
-  }
-  .form {
-    color: #2f1339;
-    font-family: 'Novecento Sans Web';
-  }
-
-  .content-area {
+.page-id-72 {
+  .site-content {
     background-color: #ffffff;
-    font-family: 'Novecento Sans Web';
-    font-size: 19px;
-    line-height: 1.75;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    padding-top: 50px;
+
+    .entry-content {
+      background-color: #ffffff;
+      font-family: 'Novecento Sans Web';
+      font-size: 19px;
+      // width: 73%;
+      // margin: 3rem auto;
+
+      .entry-title {
+        // padding-top: 3rem;
+      }
+    }
+    .widget-area {
+      padding-left: 3%;
+      padding-top: 4%;
+      padding-bottom: 5%;
+    }
+    .p {
+      font-family: 'Merriweather Web';
+      font-size: 16px;
+    }
+    .form {
+      color: #2f1339;
+      font-family: 'Novecento Sans Web';
+    }
+    .required {
+      color: #d99054;
+    }
   }
 
-  .required {
-    color: #d99054;
-  }
-}
+  //----------SIDE BAR------------//
 
-//----------SIDE BAR------------//
+  .site-content {
+    .widget-area {
+      background-color: #ffffff;
+      border-left: 1px solid #e1e1e1;
+      font-family: 'Merriweather Web';
+      font-size: 16px;
+      line-height: 1.75;
 
-.site-content {
-  .widget-area {
-    background-color: #ffffff;
-    border-left: 1px solid #e1e1e1;
-    font-family: 'Merriweather Web';
-    font-size: 16px;
-    line-height: 1.75;
-  }
+      .widget-title,
+      ul {
+        margin: 0;
+        list-style-type: none;
+        padding-inline-start: 0;
+        li,
+        a {
+          text-decoration: none;
+        }
+      }
+      .day-of-week {
+        font-weight: bold;
+      }
+      p {
+        margin-block-end: 0.7rem;
+        margin-block-start: 0.7rem;
+      }
+      h2 {
+        letter-spacing: 0.1rem;
+      }
+    }
+    .contact {
+      padding-bottom: 1.7rem;
 
-  .fas {
-    font-size: 14px;
-    padding: 5px;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .fas {
+      font-size: 14px;
+      margin-right: 8px;
+    }
   }
-}
-.caixaalta {
-  font-weight: bold;
-  color: #2f1339;
-  font-family: 'Novecento Sans Web';
-  font-size: 19px;
-  letter-spacing: 2px;
-}
-.heavy {
-  font-weight: bold;
+  .heavy {
+    font-weight: bold;
+  }
 }

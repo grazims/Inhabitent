@@ -307,7 +307,7 @@ h3 {
   color: #d99054;
   font-weight: bold;
   font-family: 'Novecento Sans Web';
-  font-size: 16px; }
+  font-size: 19px; }
 
 /* Copy */
 .label {
@@ -780,27 +780,22 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.container {
+  width: 1120px;
+  margin: 0 auto; }
+
 .site {
   /* Front page */ }
   .site .site-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 1120px;
-    margin: 0 auto;
-    margin-top: 100px; }
-    .site .site-content .entry-header {
-      padding-top: 2rem;
-      padding-right: 2rem; }
-    .site .site-content .content-area {
-      -webkit-box-flex: 2;
-          -ms-flex: 2;
-              flex: 2; }
-    .site .site-content .widget-area {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
-      padding: 20px; }
+    margin-left: auto;
+    margin-right: auto; }
+  .site .content-area {
+    width: 100%; }
+  .site .widget-area {
+    width: 35%; }
   .site .home .site {
     max-width: 90%; }
   .site .home .site-header {
@@ -810,7 +805,7 @@ object {
 .site-header {
   background-color: rgba(255, 255, 255, 0.5);
   position: fixed;
-  top: 40px;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 999;
@@ -849,7 +844,7 @@ object {
           justify-content: flex-start;
   margin-left: 200px; }
 
-.fas {
+.faz {
   margin-left: 25px; }
 
 .hero-image-header {
@@ -859,41 +854,74 @@ object {
   left: 0;
   right: 0; }
 
-.site-content {
-  background-color: #ffffff; }
-  .site-content .p {
-    font-family: 'Merriweather Web';
-    font-size: 16px; }
-  .site-content .form {
-    color: #2f1339;
-    font-family: 'Novecento Sans Web'; }
-  .site-content .content-area {
+.about {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px; }
+
+.page-id-72 .site-content {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  padding-top: 50px; }
+  .page-id-72 .site-content .entry-content {
     background-color: #ffffff;
     font-family: 'Novecento Sans Web';
-    font-size: 19px;
-    line-height: 1.75; }
-  .site-content .required {
+    font-size: 19px; }
+  .page-id-72 .site-content .widget-area {
+    padding-left: 3%;
+    padding-top: 4%;
+    padding-bottom: 5%; }
+  .page-id-72 .site-content .p {
+    font-family: 'Merriweather Web';
+    font-size: 16px; }
+  .page-id-72 .site-content .form {
+    color: #2f1339;
+    font-family: 'Novecento Sans Web'; }
+  .page-id-72 .site-content .required {
     color: #d99054; }
 
-.site-content .widget-area {
+.page-id-72 .site-content .widget-area {
   background-color: #ffffff;
   border-left: 1px solid #e1e1e1;
   font-family: 'Merriweather Web';
   font-size: 16px;
   line-height: 1.75; }
+  .page-id-72 .site-content .widget-area .widget-title,
+  .page-id-72 .site-content .widget-area ul {
+    margin: 0;
+    list-style-type: none;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0; }
+    .page-id-72 .site-content .widget-area .widget-title li,
+    .page-id-72 .site-content .widget-area .widget-title a,
+    .page-id-72 .site-content .widget-area ul li,
+    .page-id-72 .site-content .widget-area ul a {
+      text-decoration: none; }
+  .page-id-72 .site-content .widget-area .day-of-week {
+    font-weight: bold; }
+  .page-id-72 .site-content .widget-area p {
+    -webkit-margin-after: 0.7rem;
+            margin-block-end: 0.7rem;
+    -webkit-margin-before: 0.7rem;
+            margin-block-start: 0.7rem; }
+  .page-id-72 .site-content .widget-area h2 {
+    letter-spacing: 0.1rem; }
 
-.site-content .fas {
+.page-id-72 .site-content .contact {
+  padding-bottom: 1.7rem; }
+  .page-id-72 .site-content .contact a {
+    text-decoration: none; }
+
+.page-id-72 .site-content .fas {
   font-size: 14px;
-  padding: 5px; }
+  margin-right: 8px; }
 
-.caixaalta {
-  font-weight: bold;
-  color: #2f1339;
-  font-family: 'Novecento Sans Web';
-  font-size: 19px;
-  letter-spacing: 2px; }
-
-.heavy {
+.page-id-72 .heavy {
   font-weight: bold; }
 
 .site-maine {
@@ -937,40 +965,55 @@ object {
     background-repeat: no-repeat; }
 
 .site-footer {
-  background-image: url(http://localhost:3000/wptest/wp-content/themes/inhabitent/project-04/images/dark-wood.png);
   color: #ffffff;
-  padding: 1rem;
-  height: 400px; }
-  .site-footer .colum {
+  padding: 1.5rem;
+  height: 350px; }
+  .site-footer .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 5rem; }
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px; }
   .site-footer .block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 300px;
-    margin: 0 2rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 10px;
     margin-bottom: 10px; }
-  .site-footer .logof {
-    width: 400px;
+  .site-footer .block3 {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    width: 50%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .site-footer .block3 .logofooter {
+      width: 300px;
+      margin-top: 1rem;
+      text-align: right; }
   .site-footer .footer-info {
     color: #ffffff;
     text-decoration: none; }
   .site-footer p {
     line-height: 1.7;
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 0.5rem; }
+    .site-footer p .span {
+      font-weight: bold; }
+  .site-footer .email,
+  .site-footer .phone {
+    text-decoration: none; }
+    .site-footer .email:hover,
+    .site-footer .phone:hover {
+      -webkit-text-decoration: blueviolet;
+              text-decoration: blueviolet; }
+  .site-footer .fab {
+    padding: 0.3rem; }
   .site-footer .medias {
-    margin-left: 40px;
     margin-top: 10px; }
 
 .copyright p {
@@ -978,4 +1021,4 @@ object {
   font-size: 16px;
   line-height: 1.75;
   text-align: center;
-  margin-top: 50px; }
+  margin-top: 4rem; }
