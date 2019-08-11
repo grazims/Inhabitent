@@ -23,8 +23,9 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<img class="logo" src= "http://localhost:3000/wptest/wp-content/themes/inhabitent/project-04/images/logos/inhabitent-logo-tent.svg)">
-				
+									
+					<a href="http://localhost:3000/wptest/" rel="home" class="logoheader"><img class="logoheader" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ?> " alt="logo-header"/></a>
+
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">

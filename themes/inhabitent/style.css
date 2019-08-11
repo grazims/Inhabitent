@@ -791,16 +791,68 @@ object {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding-top: 6rem;
+    width: 1120px; }
   .site .content-area {
     width: 100%; }
   .site .widget-area {
     width: 35%; }
   .site .home .site {
     max-width: 90%; }
-  .site .home .site-header {
-    background-color: seagreen;
-    padding: 1rem; }
+
+.single-post .content-area {
+  padding-right: 5%;
+  padding-top: 5%;
+  margin: 0;
+  padding-bottom: 4rem; }
+  .single-post .content-area .site-main img {
+    width: 1500px; }
+  .single-post .content-area .journal-content {
+    position: relative; }
+    .single-post .content-area .journal-content h2,
+    .single-post .content-area .journal-content .journal-date {
+      position: absolute;
+      background: #248a83;
+      margin: 0;
+      color: #fff;
+      padding: 0.3rem 0.5rem; }
+    .single-post .content-area .journal-content h2 {
+      left: 0;
+      top: 50px;
+      font-size: 33px;
+      max-width: 75%; }
+    .single-post .content-area .journal-content .journal-date {
+      right: 0;
+      bottom: 7px;
+      text-transform: uppercase; }
+  .single-post .content-area .post-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .single-post .content-area .post-info p {
+      padding-right: 1rem;
+      text-transform: uppercase;
+      font-family: 'Novecento Sans Web'; }
+      .single-post .content-area .post-info p a {
+        text-decoration: none; }
+
+.single-post .social .social-button {
+  text-transform: uppercase;
+  background: #fff;
+  color: black;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 9px 19px 9px 19px;
+  font-size: 0.9rem; }
+  .single-post .social .social-button:hover {
+    background-color: #248a83;
+    color: #fff;
+    border: none; }
+
+.single-post .widget-area {
+  padding-left: 5%;
+  padding-top: 5%; }
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.5);
@@ -809,18 +861,21 @@ object {
   left: 0;
   right: 0;
   z-index: 999;
-  padding: 0.5rem 0;
+  padding: 0.5rem 2rem 0.5rem 2rem;
   width: 100%;
   border-bottom: 1px solid #e1e1e1;
   color: #248a83;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Novecento Sans Web';
   font-size: 1rem;
   line-height: 1.75;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  padding-top: 3rem; }
 
 .main-navigation {
   display: -webkit-box;
@@ -829,7 +884,7 @@ object {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 85%;
+  width: 70%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -837,12 +892,11 @@ object {
 .menu-item {
   margin-left: 10px; }
 
-.logo {
+.logoheader {
   width: 50px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-left: 200px; }
+          justify-content: flex-start; }
 
 .faz {
   margin-left: 25px; }
@@ -867,11 +921,20 @@ object {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
-  padding-top: 50px; }
+  padding-top: 57px; }
   .page-id-72 .site-content .entry-content {
     background-color: #ffffff;
     font-family: 'Novecento Sans Web';
-    font-size: 19px; }
+    font-size: 19px;
+    padding-right: 5%;
+    padding-top: 5%;
+    margin: 0; }
+    .page-id-72 .site-content .entry-content h1 {
+      -webkit-margin-after: 0;
+              margin-block-end: 0;
+      -webkit-margin-before: 0;
+              margin-block-start: 0;
+      margin-bottom: 8px; }
   .page-id-72 .site-content .widget-area {
     padding-left: 3%;
     padding-top: 4%;
@@ -885,43 +948,43 @@ object {
   .page-id-72 .site-content .required {
     color: #d99054; }
 
-.page-id-72 .site-content .widget-area {
+.site-content .widget-area {
   background-color: #ffffff;
   border-left: 1px solid #e1e1e1;
   font-family: 'Merriweather Web';
   font-size: 16px;
   line-height: 1.75; }
-  .page-id-72 .site-content .widget-area .widget-title,
-  .page-id-72 .site-content .widget-area ul {
+  .site-content .widget-area .widget-title,
+  .site-content .widget-area ul {
     margin: 0;
     list-style-type: none;
     -webkit-padding-start: 0;
             padding-inline-start: 0; }
-    .page-id-72 .site-content .widget-area .widget-title li,
-    .page-id-72 .site-content .widget-area .widget-title a,
-    .page-id-72 .site-content .widget-area ul li,
-    .page-id-72 .site-content .widget-area ul a {
+    .site-content .widget-area .widget-title li,
+    .site-content .widget-area .widget-title a,
+    .site-content .widget-area ul li,
+    .site-content .widget-area ul a {
       text-decoration: none; }
-  .page-id-72 .site-content .widget-area .day-of-week {
+  .site-content .widget-area .day-of-week {
     font-weight: bold; }
-  .page-id-72 .site-content .widget-area p {
+  .site-content .widget-area p {
     -webkit-margin-after: 0.7rem;
             margin-block-end: 0.7rem;
     -webkit-margin-before: 0.7rem;
             margin-block-start: 0.7rem; }
-  .page-id-72 .site-content .widget-area h2 {
+  .site-content .widget-area h2 {
     letter-spacing: 0.1rem; }
 
-.page-id-72 .site-content .contact {
+.site-content .contact {
   padding-bottom: 1.7rem; }
-  .page-id-72 .site-content .contact a {
+  .site-content .contact a {
     text-decoration: none; }
 
-.page-id-72 .site-content .fas {
+.site-content .fas {
   font-size: 14px;
   margin-right: 8px; }
 
-.page-id-72 .heavy {
+.heavy {
   font-weight: bold; }
 
 .site-maine {
@@ -963,6 +1026,55 @@ object {
     height: 200px;
     background-size: cover;
     background-repeat: no-repeat; }
+
+.blog .content-area {
+  padding-right: 5%;
+  padding-top: 5%;
+  margin: 0;
+  padding-bottom: 4rem; }
+  .blog .content-area .site-main img {
+    width: 1500px; }
+  .blog .content-area .journal-content {
+    position: relative; }
+    .blog .content-area .journal-content h2,
+    .blog .content-area .journal-content .journal-date {
+      position: absolute;
+      background: #248a83;
+      margin: 0;
+      color: #fff;
+      padding: 0.3rem 0.5rem; }
+      .blog .content-area .journal-content h2 a,
+      .blog .content-area .journal-content .journal-date a {
+        color: #fff;
+        text-decoration: none; }
+        .blog .content-area .journal-content h2 a:hover,
+        .blog .content-area .journal-content .journal-date a:hover {
+          color: #f0e4d1; }
+    .blog .content-area .journal-content h2 {
+      left: 0;
+      top: 50px;
+      font-size: 33px;
+      max-width: 75%; }
+    .blog .content-area .journal-content .journal-date {
+      right: 0;
+      bottom: 7px;
+      text-transform: uppercase; }
+
+.blog .button-journal {
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 7px 17px 7px 17px;
+  font-size: 0.9rem; }
+  .blog .button-journal:hover {
+    background-color: #248a83;
+    color: #fff;
+    border: none; }
+
+.blog .widget-area {
+  padding-left: 5%;
+  padding-top: 5%; }
 
 .site-footer {
   color: #ffffff;

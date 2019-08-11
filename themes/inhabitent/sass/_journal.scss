@@ -1,0 +1,63 @@
+.blog {
+  .content-area {
+    padding-right: 5%;
+    padding-top: 5%;
+    margin: 0;
+    padding-bottom: 4rem;
+    .site-main {
+      img {
+        width: 1500px;
+      }
+    }
+    .journal-content {
+      position: relative;
+
+      h2,
+      .journal-date {
+        position: absolute;
+        background: #248a83;
+        margin: 0;
+        color: #fff;
+        padding: 0.3rem 0.5rem;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          &:hover {
+            color: #f0e4d1;
+          }
+        }
+      }
+
+      h2 {
+        left: 0;
+        top: 50px;
+        font-size: 33px;
+        max-width: 75%;
+      }
+
+      .journal-date {
+        right: 0;
+        bottom: 7px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .button-journal {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 7px 17px 7px 17px;
+    font-size: 0.9rem;
+    &:hover {
+      background-color: #248a83;
+      color: #fff;
+      border: none;
+    }
+  }
+  .widget-area {
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+}
