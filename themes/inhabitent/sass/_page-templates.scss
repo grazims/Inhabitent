@@ -32,8 +32,17 @@
   }
 }
 
-//single page//
-.single-post {
+//-----------------------------------------------//
+//Archive page//
+
+.archive {
+  .page-header {
+    h1 {
+      text-align: start;
+      font-family: 'Novecento Sans Web';
+      letter-spacing: 2px;
+    }
+  }
   .content-area {
     padding-right: 5%;
     padding-top: 5%;
@@ -54,6 +63,14 @@
         margin: 0;
         color: #fff;
         padding: 0.3rem 0.5rem;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          &:hover {
+            color: #f0e4d1;
+          }
+        }
       }
 
       h2 {
@@ -69,37 +86,97 @@
         text-transform: uppercase;
       }
     }
-    .post-info {
-      display: flex;
-      p {
-        padding-right: 1rem;
-        text-transform: uppercase;
-        font-family: 'Novecento Sans Web';
-        a {
-          text-decoration: none;
-        }
-      }
+  }
+  .button-journal {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 7px 17px 7px 17px;
+    font-size: 0.9rem;
+    &:hover {
+      background-color: #248a83;
+      color: #fff;
+      border: none;
     }
   }
-  .social {
-    .social-button {
-      text-transform: uppercase;
-      background: #fff;
-      color: black;
-      text-decoration: none;
-      border: 1px solid #000;
-      padding: 9px 19px 9px 19px;
-      font-size: 0.9rem;
-      &:hover {
-        background-color: #248a83;
-        color: #fff;
-        border: none;
-      }
-    }
-  }
+}
+//----------------------------
+//404
 
+.error404 {
+  .site-content {
+    .content-area {
+      padding-bottom: 3rem;
+      .page-header {
+        border-bottom: none;
+      }
+    }
+  }
+  h1 {
+    text-align: start;
+    font-family: 'Novecento Sans Web';
+    letter-spacing: 2px;
+    font-size: 38px;
+  }
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+  ul {
+    margin: 0;
+    padding-inline-start: 0;
+    font-family: 'Merriweather Web';
+  }
+  a {
+    text-decoration: none;
+    line-height: 1.75;
+  }
+}
+//----------search results
+
+.search-results {
+  .site-content {
+    .content-area {
+      padding-bottom: 3rem;
+      padding-right: 4rem;
+      .page-header {
+        border-bottom: 1px solid #e1e1e1;
+      }
+    }
+  }
+  h1 {
+    text-align: start;
+    font-family: 'Novecento Sans Web';
+    letter-spacing: 2px;
+    font-size: 38px;
+  }
+  h2 {
+    font-family: 'Novecento Sans Web';
+    letter-spacing: 2px;
+    font-size: 33px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .entry-meta {
+    font-family: 'Novecento Sans Web';
+    text-transform: uppercase;
+  }
+  .button-journal {
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 7px 17px;
+    font-size: 0.9rem;
+  }
   .widget-area {
-    padding-left: 5%;
-    padding-top: 5%;
+    h2 {
+      font-size: 24px;
+    }
   }
 }

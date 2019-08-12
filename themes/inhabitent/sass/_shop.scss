@@ -1,44 +1,88 @@
-.site-maine {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
-  padding-top: 100px;
+.site-content {
+  .content-area {
+    padding-right: 0;
+
+    .page-header {
+      color: #404040;
+      border-bottom: 1px dashed #c8c8c8;
+      text-align: center;
+
+      .subtitle {
+        font-family: 'Novecento Sans Web';
+        font-size: 1rem;
+        line-height: 1.75;
+        font-size: 18px;
+        text-decoration: none;
+      }
+      .title {
+        margin: 0 auto;
+        display: table;
+      }
+      .list-dot {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        width: 400px;
+        margin: auto;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      padding-top: 3rem;
+
+      .product-thumb {
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .price {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #a1a1a1;
+
+        p {
+          margin: 0;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
 }
+//-----------------------------------//
+//taxonomy page
 
-.page-header {
-  color: #404040;
-  border-bottom: 1px dashed #c8c8c8;
-  text-align: center;
+.tax-product_type {
+  .site-content {
+    .page-header {
+      border-bottom: 1px dashed #c8c8c8;
+      margin-bottom: 3rem;
+      text-align: center;
+      h1 {
+        text-align: center;
+      }
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      padding-top: 3rem;
 
-  .subtitle {
-    font-family: 'Novecento Sans Web';
-    font-size: 1rem;
-    line-height: 1.75;
-    font-size: 18px;
-    text-decoration: none;
-  }
-  .title {
-    margin: 0 auto;
-    display: table;
-  }
-  .list-dot {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    width: 400px;
-    margin: auto;
-  }
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  padding-top: 3rem;
-
-  .product-thumb {
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
+      .product-thumb {
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .price {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #a1a1a1;
+      }
+    }
   }
 }

@@ -17,7 +17,7 @@ get_header(); ?>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
-
+			
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -26,7 +26,7 @@ get_header(); ?>
 			<?php endwhile; ?>
 			
 			<?php the_posts_navigation(); ?>
-
+			
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>

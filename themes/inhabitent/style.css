@@ -286,7 +286,8 @@ textarea {
   font-family: "Merriweather", serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background-color: #f4f4f4; }
 
 /* Headings */
 h1,
@@ -801,58 +802,118 @@ object {
   .site .home .site {
     max-width: 90%; }
 
-.single-post .content-area {
+.archive .page-header h1 {
+  text-align: start;
+  font-family: 'Novecento Sans Web';
+  letter-spacing: 2px; }
+
+.archive .content-area {
   padding-right: 5%;
   padding-top: 5%;
   margin: 0;
   padding-bottom: 4rem; }
-  .single-post .content-area .site-main img {
+  .archive .content-area .site-main img {
     width: 1500px; }
-  .single-post .content-area .journal-content {
+  .archive .content-area .journal-content {
     position: relative; }
-    .single-post .content-area .journal-content h2,
-    .single-post .content-area .journal-content .journal-date {
+    .archive .content-area .journal-content h2,
+    .archive .content-area .journal-content .journal-date {
       position: absolute;
       background: #248a83;
       margin: 0;
       color: #fff;
       padding: 0.3rem 0.5rem; }
-    .single-post .content-area .journal-content h2 {
+      .archive .content-area .journal-content h2 a,
+      .archive .content-area .journal-content .journal-date a {
+        color: #fff;
+        text-decoration: none; }
+        .archive .content-area .journal-content h2 a:hover,
+        .archive .content-area .journal-content .journal-date a:hover {
+          color: #f0e4d1; }
+    .archive .content-area .journal-content h2 {
       left: 0;
       top: 50px;
       font-size: 33px;
       max-width: 75%; }
-    .single-post .content-area .journal-content .journal-date {
+    .archive .content-area .journal-content .journal-date {
       right: 0;
       bottom: 7px;
       text-transform: uppercase; }
-  .single-post .content-area .post-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .single-post .content-area .post-info p {
-      padding-right: 1rem;
-      text-transform: uppercase;
-      font-family: 'Novecento Sans Web'; }
-      .single-post .content-area .post-info p a {
-        text-decoration: none; }
 
-.single-post .social .social-button {
+.archive .button-journal {
   text-transform: uppercase;
-  background: #fff;
   color: black;
   text-decoration: none;
   border: 1px solid #000;
-  padding: 9px 19px 9px 19px;
+  padding: 7px 17px 7px 17px;
   font-size: 0.9rem; }
-  .single-post .social .social-button:hover {
+  .archive .button-journal:hover {
     background-color: #248a83;
     color: #fff;
     border: none; }
 
-.single-post .widget-area {
-  padding-left: 5%;
-  padding-top: 5%; }
+.error404 .site-content .content-area {
+  padding-bottom: 3rem; }
+  .error404 .site-content .content-area .page-header {
+    border-bottom: none; }
+
+.error404 h1 {
+  text-align: start;
+  font-family: 'Novecento Sans Web';
+  letter-spacing: 2px;
+  font-size: 38px; }
+
+.error404 fieldset {
+  border: none;
+  padding: 0; }
+
+.error404 li {
+  list-style-type: none; }
+
+.error404 ul {
+  margin: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  font-family: 'Merriweather Web'; }
+
+.error404 a {
+  text-decoration: none;
+  line-height: 1.75; }
+
+.search-results .site-content .content-area {
+  padding-bottom: 3rem;
+  padding-right: 4rem; }
+  .search-results .site-content .content-area .page-header {
+    border-bottom: 1px solid #e1e1e1; }
+
+.search-results h1 {
+  text-align: start;
+  font-family: 'Novecento Sans Web';
+  letter-spacing: 2px;
+  font-size: 38px; }
+
+.search-results h2 {
+  font-family: 'Novecento Sans Web';
+  letter-spacing: 2px;
+  font-size: 33px; }
+
+.search-results a {
+  text-decoration: none; }
+
+.search-results .entry-meta {
+  font-family: 'Novecento Sans Web';
+  text-transform: uppercase; }
+
+.search-results .button-journal {
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 7px 17px;
+  font-size: 0.9rem; }
+
+.search-results .widget-area h2 {
+  font-size: 24px; }
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.5);
@@ -872,7 +933,7 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: 'Novecento Sans Web';
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.75;
   text-transform: lowercase;
   padding-top: 3rem; }
@@ -901,14 +962,30 @@ object {
 .faz {
   margin-left: 25px; }
 
-.hero-image-header {
-  height: 100vh;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0; }
+.search-form fieldset {
+  border: none; }
 
-.about {
+.search-form input {
+  background-color: #fff;
+  border: none;
+  font-family: 'Novecento Sans Web', sans-serif;
+  text-transform: lowercase; }
+
+.page-id-8 .site .site-content {
+  display: contents; }
+  .page-id-8 .site .site-content .hero-image-header {
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0; }
+  .page-id-8 .site .site-content h1 {
+    color: #fff;
+    font-family: 'Novecento Sans Web';
+    font-size: 36px;
+    letter-spacing: 2px; }
+
+.page-id-8 .about {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px; }
@@ -953,7 +1030,10 @@ object {
   border-left: 1px solid #e1e1e1;
   font-family: 'Merriweather Web';
   font-size: 16px;
-  line-height: 1.75; }
+  line-height: 1.75;
+  padding-left: 3%;
+  padding-top: 4%;
+  padding-bottom: 5%; }
   .site-content .widget-area .widget-title,
   .site-content .widget-area ul {
     margin: 0;
@@ -987,45 +1067,78 @@ object {
 .heavy {
   font-weight: bold; }
 
-.site-maine {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
-  padding-top: 100px; }
+.site-content .content-area {
+  padding-right: 0; }
+  .site-content .content-area .page-header {
+    color: #404040;
+    border-bottom: 1px dashed #c8c8c8;
+    text-align: center; }
+    .site-content .content-area .page-header .subtitle {
+      font-family: 'Novecento Sans Web';
+      font-size: 1rem;
+      line-height: 1.75;
+      font-size: 18px;
+      text-decoration: none; }
+    .site-content .content-area .page-header .title {
+      margin: 0 auto;
+      display: table; }
+    .site-content .content-area .page-header .list-dot {
+      list-style-type: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      width: 400px;
+      margin: auto; }
+    .site-content .content-area .page-header a {
+      text-decoration: none; }
+  .site-content .content-area .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding-top: 3rem; }
+    .site-content .content-area .grid-container .product-thumb {
+      height: 200px;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .site-content .content-area .grid-container .price {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      border: 1px solid #a1a1a1; }
+      .site-content .content-area .grid-container .price p {
+        margin: 0;
+        padding: 0.5rem; }
 
-.page-header {
-  color: #404040;
+.tax-product_type .site-content .page-header {
   border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem;
   text-align: center; }
-  .page-header .subtitle {
-    font-family: 'Novecento Sans Web';
-    font-size: 1rem;
-    line-height: 1.75;
-    font-size: 18px;
-    text-decoration: none; }
-  .page-header .title {
-    margin: 0 auto;
-    display: table; }
-  .page-header .list-dot {
-    list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 400px;
-    margin: auto; }
+  .tax-product_type .site-content .page-header h1 {
+    text-align: center; }
 
-.grid-container {
+.tax-product_type .site-content .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   padding-top: 3rem; }
-  .grid-container .product-thumb {
+  .tax-product_type .site-content .grid-container .product-thumb {
     height: 200px;
     background-size: cover;
     background-repeat: no-repeat; }
+  .tax-product_type .site-content .grid-container .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 1px solid #a1a1a1; }
 
 .blog .content-area {
   padding-right: 5%;
@@ -1073,8 +1186,56 @@ object {
     border: none; }
 
 .blog .widget-area {
-  padding-left: 5%;
+  padding-left: 3%;
   padding-top: 5%; }
+
+.single-post .content-area {
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 4rem; }
+  .single-post .content-area .site-main img {
+    width: 1500px; }
+  .single-post .content-area .journal-content {
+    position: relative; }
+    .single-post .content-area .journal-content h2,
+    .single-post .content-area .journal-content .journal-date {
+      position: absolute;
+      background: #248a83;
+      margin: 0;
+      color: #fff;
+      padding: 0.3rem 0.5rem; }
+    .single-post .content-area .journal-content h2 {
+      left: 0;
+      top: 50px;
+      font-size: 33px;
+      max-width: 75%; }
+    .single-post .content-area .journal-content .journal-date {
+      right: 0;
+      bottom: 7px;
+      text-transform: uppercase; }
+  .single-post .content-area .post-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .single-post .content-area .post-info p {
+      padding-right: 1rem;
+      text-transform: uppercase;
+      font-family: 'Novecento Sans Web'; }
+      .single-post .content-area .post-info p a {
+        text-decoration: none; }
+
+.single-post .social .social-button {
+  text-transform: uppercase;
+  background: #fff;
+  color: black;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 9px 19px 9px 19px;
+  font-size: 0.9rem; }
+  .single-post .social .social-button:hover {
+    background-color: #248a83;
+    color: #fff;
+    border: none; }
 
 .site-footer {
   color: #ffffff;

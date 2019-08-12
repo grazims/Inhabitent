@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-maine" role="main">
+		<main id="main" class="site-main" role="main">
 
 		
 		<?php if ( have_posts() ) : ?>
@@ -24,7 +24,7 @@ get_header(); ?>
 						echo '<ul class="list-dot">';
 						foreach ( $terms as $term ) {
 							echo '<li>', '<p class="subtitle">'; 
-							echo '<a class="miranda" href=" ' . esc_url( get_term_link( $term ) ) .' ">' . $term->name . '</a>';
+							echo '<a href=" ' . esc_url( get_term_link( $term ) ) .' ">' . $term->name . '</a>';
 							echo '</li>', '</p>';
 						}
 						echo '</ul>';
@@ -44,9 +44,9 @@ get_header(); ?>
 				<div class="grid-container">
 				<?php if ( $the_query->have_posts() ) : ?>
 				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-					<?php get_template_part( 'template-parts/content', 'product' ); ?>
-
+<div class="entry-title">
+					<?php get_template_part( 'template-parts/content-product', 'product' ); ?>
+			</div>
 				<?php endwhile; ?>
 				
 				</div>

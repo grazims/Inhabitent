@@ -20,9 +20,11 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'search' ); ?>
-
+				<p>
+		<a href="#" class="button-journal">Read more →</a>
+	</p>
 			<?php endwhile; ?>
-
+		
 			<?php red_starter_numbered_pagination(); ?>
 
 		<?php else : ?>
@@ -30,6 +32,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+		
 
 		</main><!-- #main -->
 	</section><!-- #primary -->

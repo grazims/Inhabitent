@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   font-family: 'Novecento Sans Web';
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.75;
   text-transform: lowercase;
   padding-top: 3rem; //remove later
@@ -36,4 +36,15 @@
 
 .faz {
   margin-left: 25px;
+}
+.search-form {
+  fieldset {
+    border: none;
+  }
+  input {
+    background-color: #fff;
+    border: none;
+    font-family: 'Novecento Sans Web', sans-serif;
+    text-transform: lowercase;
+  }
 }

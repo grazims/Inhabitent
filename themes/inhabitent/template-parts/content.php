@@ -20,12 +20,14 @@
 			<p class="journal-date"><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?></p>
 		<?php endif; ?>
 </div>
-	
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
 	</div>
-	
+	<p>
+		<a href="#" class="button-journal">Read more →</a>
+	</p>
 	<!-- .entry-content -->
 </article><!-- #post-## -->
