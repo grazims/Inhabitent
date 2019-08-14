@@ -10,7 +10,6 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -44,7 +43,7 @@ get_header(); ?>
 				<div class="grid-container">
 				<?php if ( $the_query->have_posts() ) : ?>
 				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-<div class="entry-title">
+			<div class="entry-title">
 					<?php get_template_part( 'template-parts/content-product', 'product' ); ?>
 			</div>
 				<?php endwhile; ?>

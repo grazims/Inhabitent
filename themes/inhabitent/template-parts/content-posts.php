@@ -24,7 +24,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_excerpt(); ?>
+		
 	</div>
 	<div class="button-journal"><a href="<?php the_permalink(); ?>">Read more →</a>
 </div>

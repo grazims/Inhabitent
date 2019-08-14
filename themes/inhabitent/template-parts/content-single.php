@@ -28,6 +28,7 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 	</div>
+	
 	<div class="post-info">
 		<p>Posted in &rarr; <?php the_category('<p>, '); ?> </p>
 		<p class="tagged-in"><?php the_tags('Tagged &rarr; '); ?></p>

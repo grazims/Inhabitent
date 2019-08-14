@@ -26,15 +26,15 @@ get_header();
 	</header><!-- .entry-header -->
 
 	<!-- .entry-content -->
-
-	<?php while ( have_posts() ) : the_post(); ?>
 	<div class="grid-container">
+	<?php while ( have_posts() ) : the_post(); ?>
+	
 				<?php
 					get_template_part( 'template-parts/content-product' );
 				?>
-</div>
+
 			<?php endwhile; ?>
-				
+			</div>				
 			<?php the_posts_navigation(); ?>
 
 

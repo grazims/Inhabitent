@@ -21,21 +21,25 @@
   .widget-area {
     width: 35%;
   }
-
-  //-------------------------------//
-  /* Front page */
-
-  .home {
-    .site {
-      max-width: 90%;
-    }
-  }
 }
 
 //-----------------------------------------------//
 //Archive page//
 
+.blog {
+  .comment-form-comment {
+    textarea {
+      width: 100%;
+    }
+  }
+}
+
 .archive {
+  // .site-content {
+  //   .content-area {
+  //     padding-right: 0;
+  //   }
+  // }
   .page-header {
     h1 {
       text-align: start;
@@ -89,15 +93,21 @@
   }
   .button-journal {
     text-transform: uppercase;
-    color: black;
-    text-decoration: none;
     border: 1px solid #000;
     padding: 7px 17px 7px 17px;
     font-size: 0.9rem;
+    width: fit-content;
+    a {
+      color: black;
+      text-decoration: none;
+    }
     &:hover {
       background-color: #248a83;
-      color: #fff;
       border: none;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
     }
   }
 }
