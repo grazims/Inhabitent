@@ -23,9 +23,6 @@
 				</div>
 		</a>
 
-
-
-			
 		<?php endif; ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>

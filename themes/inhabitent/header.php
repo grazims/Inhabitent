@@ -23,39 +23,18 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-									
-					<a href="http://localhost:3000/wptest/" rel="home" class="logoheader"><img class="logoheader" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ?> " alt="logo-header"/></a>
-
+						<div class="logo-tent">			
+							<a href="http://localhost:3000/wptest/" rel="home" class="logoheader"><img class="logoheader" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ?> " alt="logo-header"/></a>
+						</div>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					
-
-
-					<div class="header-search">
-
-
-<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-<fieldset>
-<a href="#" class="search-toggle" aria-hidden="true">
-<i class="fa fa-search"></i> 
-</a>
-
-<label>
-<input type="search" class="search-field" placeholder="Type and hit enter..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
-</label> 
-
-<input type="submit" id="search-submit" class="screen-reader-text" value="Search"> 
-</fieldset>
-</form>
-</div>
-
-
-
-
-
+							<!-- <i class="fa fa-search"></i>  -->
+					
+						<?php include 'searchform.php' ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

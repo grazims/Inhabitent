@@ -10,54 +10,65 @@
   border-bottom: 1px solid #e1e1e1;
   color: #248a83;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   font-family: 'Novecento Sans Web';
   font-size: 1.3rem;
   line-height: 1.75;
   text-transform: lowercase;
-  padding-top: 3rem; //remove later
-}
 
-.main-navigation {
-  display: flex;
-  justify-content: flex-end;
-  width: 70%;
-  align-items: center;
-}
-.menu-item {
-  margin-left: 10px;
-}
-
-.logoheader {
-  width: 50px;
-  justify-content: flex-start;
-  // margin-left: 200px;
-}
-
-.faz {
-  margin-left: 25px;
-}
-.search-form {
-  fieldset {
-    border: none;
+  .main-navigation {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    align-items: center;
   }
-  input {
-    background-color: #fff;
-    border: none;
-    font-family: 'Novecento Sans Web', sans-serif;
-    text-transform: lowercase;
+  .menu-item {
+    margin-left: 10px;
+  }
+  .logo-tent {
+    padding-top: 10px;
+    .logoheader {
+      width: 50px;
+      justify-content: flex-start;
+    }
+  }
+  .faz {
+    margin-left: 25px;
+  }
+  .search-form {
+    fieldset {
+      border: none;
+    }
+    input {
+      background-color: #fff;
+      border: none;
+      font-family: 'Novecento Sans Web', sans-serif;
+      text-transform: lowercase;
+    }
+    .search-field {
+      border-bottom: 1px solid #e1e1e1;
+      border-radius: 18px;
+      background-color: transparent;
+    }
   }
 }
-
 //page about header
 
+.page-id-80,
 .page-id-8 {
   .site-header {
     background-color: rgba(247, 243, 243, 0.009);
-    border-bottom: none;
-    // a {
-    //   &&:hover {
-    //     color: blue;
-    //   }
+    border: none;
+    a {
+      color: #fff;
+      &:hover {
+        color: #f0e4d1;
+      }
+    }
+    .search-field {
+      border-bottom: 1px solid #e1e1e1;
+      border-radius: 18px;
+      background-color: transparent;
+    }
   }
 }
