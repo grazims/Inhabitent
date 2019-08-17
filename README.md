@@ -1,3 +1,19 @@
+INHABITENT SITE
+
+
+# Technologies used
+
+* WordPress
+* PHP
+* Sass
+* HTML5
+* Javascript
+* Gulp
+
+## Personal learnings
+Very big and complex project, short time to build. Much easier to do after project 5, but too much damage to fix. Still, could learn a lot about WordPress. Would be better if this was the second WP project. 
+
+
 # RED Starter
 
 A WordPress starter theme for RED Academy students, forked from Underscores.
