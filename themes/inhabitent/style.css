@@ -446,12 +446,17 @@ input[type='submit'] {
   border: none;
   background: #248a83;
   color: #fff;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14.4px;
+  font-size: 0.9rem;
   line-height: 1;
-  padding: 0.6rem 1rem 0.4rem;
+  padding: 0.6rem 1rem 0.6rem;
   font-family: 'Novecento Sans Web';
   /* Fields */ }
+  button:hover,
+  input[type='button']:hover,
+  input[type='reset']:hover,
+  input[type='submit']:hover {
+    background-color: #1c6f69; }
   button input[type='text'],
   button input[type='email'],
   button input[type='url'],
@@ -981,6 +986,10 @@ object {
   font-family: 'Novecento Sans Web', sans-serif;
   text-transform: lowercase; }
 
+.page-id-8 .site-header {
+  background-color: rgba(247, 243, 243, 0.009);
+  border-bottom: none; }
+
 .page-id-8 .site .site-content {
   display: contents; }
   .page-id-8 .site .site-content .hero-image-header {
@@ -1015,6 +1024,7 @@ object {
     font-size: 19px;
     padding-right: 5%;
     padding-top: 5%;
+    padding-bottom: 5%;
     margin: 0; }
     .page-id-72 .site-content .entry-content h1 {
       -webkit-margin-after: 0;
@@ -1156,17 +1166,16 @@ object {
     background-size: cover;
     background-repeat: no-repeat; }
   .tax-product_type .site-content .grid-container .price {
+    padding-bottom: 1.3rem; }
+  .tax-product_type .site-content .grid-container .price-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    border: 1px solid #a1a1a1; }
-  .tax-product_type .site-content .grid-container .price-link {
+    border: 1px solid #a1a1a1;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     overflow: hidden; }
     .tax-product_type .site-content .grid-container .price-link::after {
@@ -1255,7 +1264,6 @@ object {
       text-transform: uppercase; }
 
 .blog .button-journal {
-  text-transform: uppercase;
   text-transform: uppercase;
   font-family: 'Novecento Sans Web';
   border: 1px solid #000;
@@ -1374,6 +1382,108 @@ object {
 
 .single-post .comments-area .required {
   color: #d99054; }
+
+.home .site-content {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  .home .site-content .front-part {
+    height: 100vh; }
+    .home .site-content .front-part .front-part-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+
+.home .shop-stuff-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1120px; }
+  .home .shop-stuff-container h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 300; }
+  .home .shop-stuff-container .stuff-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center; }
+    .home .shop-stuff-container .stuff-container .stuff-items {
+      border: 1px solid #e1e1e1;
+      border-top: 3px solid #e1e1e1;
+      padding: 1rem; }
+      .home .shop-stuff-container .stuff-container .stuff-items:hover {
+        border-color: #d99054; }
+      .home .shop-stuff-container .stuff-container .stuff-items .stuff-logo {
+        width: 100px; }
+      .home .shop-stuff-container .stuff-container .stuff-items a {
+        border: none;
+        background: #248a83;
+        color: #fff;
+        font-size: 0.9rem;
+        line-height: 1.75;
+        padding: 0.6rem 1rem 0.6rem;
+        font-family: 'Novecento Sans Web';
+        text-transform: uppercase;
+        text-decoration: none; }
+        .home .shop-stuff-container .stuff-container .stuff-items a:hover {
+          background-color: #1c6f69; }
+
+.home .journal-main-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  padding-bottom: 3rem; }
+  .home .journal-main-container h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 300; }
+  .home .journal-main-container .journal-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px; }
+  .home .journal-main-container img {
+    width: 100%;
+    height: 225px; }
+  .home .journal-main-container .journal-content {
+    border: 1px solid #e1e1e1;
+    border-top: 3px solid #e1e1e1;
+    padding: 1rem; }
+  .home .journal-main-container p {
+    -webkit-margin-before: 0px;
+            margin-block-start: 0px;
+    -webkit-margin-after: 0px;
+            margin-block-end: 0px;
+    font-size: 12px; }
+  .home .journal-main-container h3 {
+    font-size: 21px;
+    -webkit-margin-before: 0px;
+            margin-block-start: 0px;
+    -webkit-margin-after: 0px;
+            margin-block-end: 0px;
+    padding-bottom: 1rem; }
+  .home .journal-main-container a {
+    text-decoration: none; }
+  .home .journal-main-container .button-journal {
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web';
+    border: 1px solid #000;
+    padding: 7px 17px 7px 17px;
+    font-size: 0.9rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: black;
+    text-decoration: none; }
+    .home .journal-main-container .button-journal:hover {
+      background-color: #248a83;
+      border: none;
+      color: #fff; }
 
 .site-footer {
   color: #ffffff;

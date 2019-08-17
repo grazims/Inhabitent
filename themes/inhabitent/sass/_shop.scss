@@ -97,11 +97,12 @@
         background-repeat: no-repeat;
       }
       .price {
+        padding-bottom: 1.3rem;
+      }
+      .price-link {
         display: flex;
         justify-content: space-between;
         border: 1px solid #a1a1a1;
-      }
-      .price-link {
         position: relative;
         display: flex;
         overflow: hidden;
