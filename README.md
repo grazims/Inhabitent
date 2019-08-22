@@ -1,7 +1,6 @@
 # INHABITENT SITE
 
-<img width="344" alt="Screen Shot 2019-08-22 at 11 58 36 AM" src="https://user-images.githubusercontent.com/49295071/63542030-369ed300-c4d4-11e9-9ece-a3b2fc819b24.png">
-
+<img width="344" alt="Screen Shot 2019-08-22 at 12 00 46 PM" src="https://user-images.githubusercontent.com/49295071/63542160-8ed5d500-c4d4-11e9-8e7a-4edc2b237afe.png">
 
 <img width="600" alt="Screen Shot 2019-08-22 at 11 47 01 AM" src="https://user-images.githubusercontent.com/49295071/63541598-4e298c00-c4d3-11e9-99b8-9645af4233d6.png">
 
