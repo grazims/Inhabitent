@@ -15,8 +15,6 @@
 
 <img width="600" alt="Screen Shot 2019-08-22 at 11 47 33 AM" src="https://user-images.githubusercontent.com/49295071/63541639-60a3c580-c4d3-11e9-8e8e-2f1e9d7e7ecc.png">
 
-### Personal learnings
-Very big and complex project, short time to build. Much easier to do after project 5, but too much damage to fix. Still, could learn a lot about WordPress. Would be better if this was the second WP project. 
 
 <img width="600" alt="Screen Shot 2019-08-22 at 11 48 03 AM" src="https://user-images.githubusercontent.com/49295071/63541708-85983880-c4d3-11e9-8222-4de465184b66.png">
 
